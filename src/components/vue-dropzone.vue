@@ -184,7 +184,6 @@ export default {
       return
     }
     this.hasBeenMounted = true
-    let Dropzone = require('dropzone') //eslint-disable-line
     Dropzone.autoDiscover = false
     this.dropzone = new Dropzone(this.$refs.dropzoneElement, this.dropzoneSettings)
     let vm = this
@@ -334,8 +333,6 @@ export default {
 </script>
 
 <style lang="less">
-  @import url('~dropzone/dist/dropzone.css');
-
   .vue-dropzone {
     border: 2px solid #E5E5E5;
     font-family: 'Arial', sans-serif;
